@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-context-movie-list/static/css/main.d1b05096.chunk.css",
+    "main.js": "/react-context-movie-list/static/js/main.d00350b4.chunk.js",
+    "main.js.map": "/react-context-movie-list/static/js/main.d00350b4.chunk.js.map",
+    "runtime-main.js": "/react-context-movie-list/static/js/runtime-main.163e0bd4.js",
+    "runtime-main.js.map": "/react-context-movie-list/static/js/runtime-main.163e0bd4.js.map",
+    "static/js/2.c8d1731e.chunk.js": "/react-context-movie-list/static/js/2.c8d1731e.chunk.js",
+    "static/js/2.c8d1731e.chunk.js.map": "/react-context-movie-list/static/js/2.c8d1731e.chunk.js.map",
+    "index.html": "/react-context-movie-list/index.html",
+    "precache-manifest.29aace5188723a5c659fba6d16a2151e.js": "/react-context-movie-list/precache-manifest.29aace5188723a5c659fba6d16a2151e.js",
+    "service-worker.js": "/react-context-movie-list/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/react-context-movie-list/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.c8d1731e.chunk.js.LICENSE.txt": "/react-context-movie-list/static/js/2.c8d1731e.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/react-context-movie-list/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.163e0bd4.js",
+    "static/js/2.c8d1731e.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.d00350b4.chunk.js"
+  ]
+}
