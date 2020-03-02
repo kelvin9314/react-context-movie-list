@@ -7,12 +7,30 @@ import CardList from '../components/card-list';
 
 const Movies = () => {
   
-  const { movies, lang, page, _getMovie } = useContext(MovieContext);
-
+  const { movies, lang, setLang, _getMovie, } = useContext(
+    MovieContext
+  );
+  
   useEffect(() => {
     _getMovie();
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [lang]);
+
+  // https://upmostly.com/tutorials/build-an-infinite-scroll-component-in-react-using-react-hooks
+  const handleScroll = () => {
+    const current = window.innerHeight + document.documentElement.scrollTop;
+    console.log(`current: ${current}`);
+    const height = document.documentElement.offsetHeight;
+    console.log(`height: ${height}`);
+    if (current < height) return;
+
+    _getMovie()
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
 
   return (
     <div className='App'>
