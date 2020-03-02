@@ -1,10 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Movies from './pages/movies';
+
+import MovieProvider from './contexts/MovieProvider';
 
 function App() {
   
   return (
-    <Movies />
+    <MovieProvider>
+      <Movies />
+    </MovieProvider>
   );
 }
 
