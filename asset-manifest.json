@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-context-movie-list/static/css/main.923e28be.chunk.css",
-    "main.js": "/react-context-movie-list/static/js/main.c8b1126f.chunk.js",
-    "main.js.map": "/react-context-movie-list/static/js/main.c8b1126f.chunk.js.map",
-    "runtime-main.js": "/react-context-movie-list/static/js/runtime-main.163e0bd4.js",
-    "runtime-main.js.map": "/react-context-movie-list/static/js/runtime-main.163e0bd4.js.map",
-    "static/js/2.869234d5.chunk.js": "/react-context-movie-list/static/js/2.869234d5.chunk.js",
-    "static/js/2.869234d5.chunk.js.map": "/react-context-movie-list/static/js/2.869234d5.chunk.js.map",
+    "main.css": "/react-context-movie-list/static/css/main.466f434c.chunk.css",
+    "main.js": "/react-context-movie-list/static/js/main.7772ffd6.chunk.js",
+    "main.js.map": "/react-context-movie-list/static/js/main.7772ffd6.chunk.js.map",
+    "runtime-main.js": "/react-context-movie-list/static/js/runtime-main.a88f5146.js",
+    "runtime-main.js.map": "/react-context-movie-list/static/js/runtime-main.a88f5146.js.map",
+    "static/js/2.33b4e3eb.chunk.js": "/react-context-movie-list/static/js/2.33b4e3eb.chunk.js",
+    "static/js/2.33b4e3eb.chunk.js.map": "/react-context-movie-list/static/js/2.33b4e3eb.chunk.js.map",
     "index.html": "/react-context-movie-list/index.html",
-    "precache-manifest.b6231b839b4c42af46a3644c54b6688d.js": "/react-context-movie-list/precache-manifest.b6231b839b4c42af46a3644c54b6688d.js",
+    "precache-manifest.9f3765c42a81952ca92de0800517a066.js": "/react-context-movie-list/precache-manifest.9f3765c42a81952ca92de0800517a066.js",
     "service-worker.js": "/react-context-movie-list/service-worker.js",
-    "static/css/main.923e28be.chunk.css.map": "/react-context-movie-list/static/css/main.923e28be.chunk.css.map",
-    "static/js/2.869234d5.chunk.js.LICENSE.txt": "/react-context-movie-list/static/js/2.869234d5.chunk.js.LICENSE.txt"
+    "static/css/main.466f434c.chunk.css.map": "/react-context-movie-list/static/css/main.466f434c.chunk.css.map",
+    "static/js/2.33b4e3eb.chunk.js.LICENSE.txt": "/react-context-movie-list/static/js/2.33b4e3eb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.163e0bd4.js",
-    "static/js/2.869234d5.chunk.js",
-    "static/css/main.923e28be.chunk.css",
-    "static/js/main.c8b1126f.chunk.js"
+    "static/js/runtime-main.a88f5146.js",
+    "static/js/2.33b4e3eb.chunk.js",
+    "static/css/main.466f434c.chunk.css",
+    "static/js/main.7772ffd6.chunk.js"
   ]
 }
