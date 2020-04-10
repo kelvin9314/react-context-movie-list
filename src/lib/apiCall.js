@@ -1,8 +1,9 @@
 import axios from 'axios'
 import { httpQueryBuilder } from "./helpers";
 
-const BASE_URL =
-  process.env.REACT_APP_BASE_URL || 'https://api.themoviedb.org/3/movie';
+const BASE_URL = process.env.REACT_APP_BASE_URL || 'https://api.themoviedb.org/3/movie';
+console.log(process.env.REACT_APP_BASE_URL)
+console.log(process.env.REACT_APP_API_TOKEN)
 const API_TOKEN = process.env.REACT_APP_API_TOKEN;  
 
 export const fetchMovie = async ({page, lang}) => {
