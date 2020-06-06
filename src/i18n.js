@@ -19,10 +19,10 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
+  lng: localStorage.lang || 'zh-US',
   fallbackLng: 'zh-TW',
   whitelist: ['en-US', 'zh-TW'],
-  debug: false,
-  keySeparator: false,
+  debug: process.env.NODE_ENV === 'development',
   interpolation: {
     escapeValue: false, // not needed for react as it escapes by default
   },
