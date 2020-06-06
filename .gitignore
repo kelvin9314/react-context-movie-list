@@ -106,3 +106,6 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# 使用 yarn 所以把 package-lock.json 加入 .gitignore
+package-lock.json
