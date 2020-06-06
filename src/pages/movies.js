@@ -15,9 +15,9 @@ const Movies = () => {
     // https://upmostly.com/tutorials/build-an-infinite-scroll-component-in-react-using-react-hooks
     const handleScroll = () => {
       const current = window.innerHeight + document.documentElement.scrollTop
-      console.log(`current: ${current}`)
+      // console.log(`current: ${current}`)
       const height = document.documentElement.offsetHeight
-      console.log(`height: ${height}`)
+      // console.log(`height: ${height}`)
       if (current < height) return
 
       _getMovie()

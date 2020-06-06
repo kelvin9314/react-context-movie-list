@@ -11,15 +11,15 @@ export const fetchMovie = async ({ page, lang }) => {
     if (!API_TOKEN) throw Error("API Token doesn't exist")
     console.log(httpQueryBuilder({ page, lang }))
 
-    const res = await axios.get(
+    const { data } = await axios.get(
       `${BASE_URL}/now_playing?${httpQueryBuilder({
         page,
         language: lang,
         api_key: API_TOKEN,
       })}`
     )
-    console.log(res)
-    return res.data
+    console.log(data)
+    return data
   } catch (err) {
     console.log(err.message)
     throw err
