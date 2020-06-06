@@ -23,6 +23,7 @@ module.exports = {
   },
   plugins: ['react', 'react-hooks'],
   rules: {
+    'react/prop-types': 0,
     'react-hooks/rules-of-hooks': 'error', // 檢查 Hook 的規則
     'react-hooks/exhaustive-deps': 'warn', // 檢查 effect 的相依性
   },
