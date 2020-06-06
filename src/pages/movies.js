@@ -1,23 +1,24 @@
 import React, { useContext, useEffect } from 'react'
 import { MovieContext } from '../contexts/MovieProvider'
+import { useTranslation } from 'react-i18next'
 
 import CardList from '../components/card-list'
 
 const Movies = () => {
-  const { movies, lang, setLang, _getMovie } = useContext(MovieContext)
+  const { t } = useTranslation()
+  const { movies, shouldRefetch, _changeLang, _getMovie } = useContext(MovieContext)
 
   useEffect(() => {
     _getMovie()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lang])
+  }, [shouldRefetch])
 
   useEffect(() => {
     // https://upmostly.com/tutorials/build-an-infinite-scroll-component-in-react-using-react-hooks
     const handleScroll = () => {
       const current = window.innerHeight + document.documentElement.scrollTop
-      console.log(`current: ${current}`)
+      // console.log(`current: ${current}`)
       const height = document.documentElement.offsetHeight
-      console.log(`height: ${height}`)
+      // console.log(`height: ${height}`)
       if (current < height) return
 
       _getMovie()
@@ -28,7 +29,9 @@ const Movies = () => {
 
   return (
     <div className="App">
-      <h2 style={{ textAlign: 'center' }}> Movie list context Version (Data from themoviedb) </h2>
+      <h1 style={{ textAlign: 'center' }} onClick={() => _changeLang()}>
+        {t('title')}
+      </h1>
       {movies.length > 0 ? (
         <CardList movies={movies} />
       ) : (
