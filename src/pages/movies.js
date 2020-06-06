@@ -1,9 +1,11 @@
 import React, { useContext, useEffect } from 'react'
 import { MovieContext } from '../contexts/MovieProvider'
+import { useTranslation, Trans, Translation } from 'react-i18next'
 
 import CardList from '../components/card-list'
 
 const Movies = () => {
+  const { t, i18n } = useTranslation()
   const { movies, lang, setLang, _getMovie } = useContext(MovieContext)
 
   useEffect(() => {
@@ -28,7 +30,7 @@ const Movies = () => {
 
   return (
     <div className="App">
-      <h2 style={{ textAlign: 'center' }}> Movie list context Version (Data from themoviedb) </h2>
+      <h1 style={{ textAlign: 'center' }}> {t('title')} </h1>
       {movies.length > 0 ? (
         <CardList movies={movies} />
       ) : (
